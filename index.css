@@ -1,0 +1,386 @@
+* body{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    background: black;
+    overflow-x: hidden;
+    font-family: Arial, Helvetica, sans-serif;
+    scroll-behavior: smooth;
+}
+
+.nav{
+    border: 1px solid black;
+    width: 100%;
+    height: 9vh;
+    display: flex;
+    justify-content: space-between;
+    background: rgba(0, 0, 0, 0.993);
+}
+.logo{
+    margin: 0.9em 1.5em;
+}
+.logo p{
+    font-size: 1.2em;
+    font-family: Arial, Helvetica, sans-serif;
+    color: white;
+}
+.logo p span{
+    color: aqua;
+    font-weight: bold;
+    text-shadow: 1px 1px 1px;
+}
+.nav-content{
+    display: flex;
+    margin-right: 3em;
+    gap: 1.5em;
+    line-height: 6em;
+    cursor: pointer;
+}
+
+.nav-content li a{
+    list-style-type: none;
+    font-size: 1.1em;
+    color: #fff;
+    text-decoration: none;
+}
+.nav-content li label a{
+    color: aqua;
+    text-decoration: underline;
+    font-weight: bold;
+}
+.nav-content li a:hover,
+.nav-content li a:focus{
+    color: aqua;
+    text-decoration: underline;
+}
+.body-content h2{
+    color: whitesmoke;
+    text-transform: capitalize;
+    font-size: 3em;
+    font-weight: bold;
+    break-inside: avoid;
+    display: flow-root;
+}
+.center{
+    justify-content: center;
+    text-align: center;
+   margin: auto;
+    align-items: center;
+}
+.body-content h2 span{
+    color: aqua;
+}
+.body-content h3{
+    font-size: 1em;
+}
+.body-content{
+    border: 1px solid transparent;
+   width: 100vh;
+   margin-left: 80px;
+   margin-top: 90px;
+}
+@media(max-width: 750px){
+    .nav-content{
+        width: 300px;
+        margin: -97px 38px;
+        gap: 10px;
+        display: none;
+        overflow-x: hidden;
+
+    }
+    .nav{
+        width: 420px;
+    }
+    /* .body-content{
+        width: 300px;
+        height: 200px;
+        text-align: center;
+        margin: 2px 20px;
+        font-size: 16px;
+    } */
+   
+}
+.text-animation{
+    color: white;
+    font-size: 1.5em;
+    margin-top: -1.5em;
+}
+.text-animation span{
+    position: relative;
+}
+.animation p span::before{
+    content: "";
+    color: aqua;
+    animation: words 20s infinite;
+}
+.animation p span::after{
+    content: "";
+    background-color: black;
+    position: absolute;
+    width: calc(100% + 4px);
+    height: 100%;
+    border-left: 3px solid blanchedalmond;
+    right: -8px;
+    animation: cursor 0.6s infinite, typing 20s steps(15) infinite;
+}
+@keyframes cursor {
+    to{
+        border-left: 2px solid blue
+    }
+}
+@keyframes words{
+    0%,
+    15%{
+        content: "Frontend developer";
+    }
+    15%,
+    35%{
+        content: "Web developer";
+    }
+    35%,
+    45%{
+        content: "Geologist";
+    }
+    45%,
+    60%{
+        content: "UI/UX Design";
+    }
+    61%,
+    80%{
+        content: "Solar installer";
+    }
+    81%,
+    100%{
+        content: "Data analysis";
+    }
+}
+@keyframes typing{
+    10%,
+    15%,
+    20%,
+    30%,
+    35%,
+    50%,
+    55%,
+    70%,
+    75%,
+    90%,
+    95%{
+        width: 0;
+    }
+    5%,
+    20%,
+    25%,
+    40%,
+    45%,
+    60%,
+    65%,
+    80%,
+    85%{
+        width: 100%;
+    }
+
+
+}
+h3{
+    color: whitesmoke;
+}
+button{
+    margin: 10px 20px;
+    padding: 6px 28px;
+   background: none;
+   color: aqua;
+   border: 2px solid aqua;
+   border-radius: 20px;
+   cursor: pointer;
+}
+button:hover,
+button:focus{
+    background: aquamarine;
+    border: none;
+    box-shadow: 0px 0px 20px  aqua;
+}
+.box1 img{
+    border: 7px solid white;
+    width: 50vh;
+    top: 10rem;
+    left: 60rem;
+    border-radius: 100vh;
+    position: absolute;
+    box-shadow: 0 0 25px aqua;
+    /* z-index: 1; */
+}
+@media(max-width:750px){
+    .box img{
+       border: 3px solid white;
+       margin-left: -50vh;
+       width: 35vh;
+       display: none;
+    }
+}
+@media (max-width:800px){
+    #img1{
+        display: none   ;
+    }
+    .body-content h2{
+        font-size: 3em;
+    }
+    .box1 img{
+        display: none;
+    }
+    .sen{
+        display: grid;
+    }
+    .body-content{
+        width: 600px;
+        height: 300px;
+        text-align: center;
+        margin: 2px 20px;
+        font-size: 10px;
+    }
+    .body-content h3{
+        font-size: 2em;
+    }
+    .edu2{
+        width: 80vh;
+    }
+    .sen1{
+        width: 320px;
+        height: 20vh;
+        justify-content: center;
+        /* margin: 2px -27vh; */
+    }
+    .sen2{
+        width: 320px;
+        height: 25vh;
+        justify-content: center;
+        /* margin: 2px -27vh; */
+    }
+    .sen3{
+        width: 320px;
+        height: 20vh;
+        justify-content: center;
+        /* margin: 2px -27vh; */
+    }
+    .heading{
+        width: 450px;
+        font-size: 1.5em;
+        text-align: center;
+    }  
+
+}
+#Education{
+    width: 100vh;
+    height: 100vh;
+}
+#img1{
+    border: none;
+    outline: none;
+    width: 37vh;
+    position: absolute;
+    border-radius: 200vh;
+    top: 23rem;
+    right: 37.6rem;
+   opacity: 0.2;
+  transform: skew(100deg);
+}
+.img3{
+    border: none;
+    width: 25px;
+    cursor: pointer;
+}
+.img3:hover{
+    background: aqua;
+}
+.heading{
+    color: white;
+    font-size: 2.5em;
+}
+.sen1{
+    border: 2px dashed #fff;
+    width: 400px;
+   height: 40vh;
+   line-height: 20px;
+}
+.sen1 h1 {
+    color: #fff;
+    text-align: center;
+}
+.sen1 p{
+    color: #fff;
+    text-align: center;
+}
+.sen2{
+    border: 2px dashed #fff;
+    width: 400px;
+    height: 40vh;
+}
+.sen2 h1{
+    color: #fff;
+    text-align: center;
+}
+.sen2 p{
+    color: #fff;
+    text-align: center;
+}
+.sen3{
+    border: 2px dashed #fff;
+    width: 400px;
+    height: 40vh;
+}
+.sen3 h1{
+    color: #fff;
+    text-align: center;
+}
+.sen3 p{
+    color: white;
+    text-align: center;
+}
+.sen{
+    display: flex;
+    gap: 30px;
+    justify-content: center;
+}
+.edu2{
+    border: 1px solid transparent;
+    margin-top: 300px;
+}
+@media(max-width:800px){
+    .sen{
+        display: grid;
+        justify-content: center;
+    }
+    .edu2{
+        margin-top: 300px;
+        margin-left: 0px;
+        width: 100vh;
+        overflow-x: hidden;
+    }
+    .sen1{
+        width: 500px;
+        height: 25vh;
+        justify-content: center;
+        margin: 1px 125px;
+
+    }
+    .sen2{
+        width: 500px;
+        height: 30vh;
+        justify-content: center;
+        margin: 2px 20vh;
+        font-size: 14px;
+    }
+    .sen3{
+        width: 500px;
+        height: 23vh;
+        justify-content: center;
+        font-size: 14px;
+        margin: 2px 20vh;
+    }
+    .heading{
+        width: 600px;
+        font-size: 1.5em;
+        text-align: center;
+    }   
+}
+
